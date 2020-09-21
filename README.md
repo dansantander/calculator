@@ -4,6 +4,7 @@ A basic calculator built with React.
 
 ## Table of Contents
 
+* [Live Demo](#demo)
 * [Features](#features)
 * [Installation](#installation)
 * [Built With](#built-with)
@@ -11,6 +12,10 @@ A basic calculator built with React.
 * [Acknowledgments](#acknowledgments)
 * [Authors](#author)
 * [License](#license)
+
+## Demo
+
+https://react-calculator2504.herokuapp.com/
 
 ## Features
 
