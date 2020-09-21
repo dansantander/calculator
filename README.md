@@ -1,4 +1,4 @@
-# Photoshock
+# Calculator
 A basic calculator built with React.
 
 
