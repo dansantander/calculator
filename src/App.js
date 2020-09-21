@@ -9,14 +9,46 @@ const bigMsg = `New Big('4.321e+4') is: ${testBig}`;
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Initial Text :)<br/>
-          {bigMsg}
-        </p>
-      </header>
+      <Counter name="Test" />
     </div>
   );
 }
+
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
+
+  render() {
+    const { count } = this.state;
+    const { name } = this.props;
+    return (
+      <div>
+        <h1>
+          Current Count:
+          { count }
+        </h1>
+        <h3>
+          Prop name:
+          { name }
+        </h3>
+        <h3>
+          {bigMsg}
+        </h3>
+      </div>
+    );
+  }
+}
+
+Counter.propTypes = {
+  name: PropTypes.string,
+};
+
+Counter.defaultProps = {
+  name: '',
+};
 
 export default App;
