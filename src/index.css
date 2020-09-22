@@ -15,7 +15,6 @@
 }
 
 body {
-  /* background-color: rgb(43, 43, 43); */
   background-image: linear-gradient(rgb(209, 209, 209), rgb(116, 120, 128));
   background-repeat: no-repeat;
   height: 100vh;
