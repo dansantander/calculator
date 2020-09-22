@@ -20,6 +20,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   name: 'name',
+  color: '#f5913e',
   wide: false,
 };
 
