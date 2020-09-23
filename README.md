@@ -1,6 +1,7 @@
 # Calculator
 A basic calculator built with React.
 
+![screenshot](calCover.png)
 
 ## Table of Contents
 
