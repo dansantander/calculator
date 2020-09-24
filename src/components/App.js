@@ -1,7 +1,8 @@
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-// import Calculate from '../logic/calculate';
+// eslint-disable-next-line no-unused-vars
+import Calculate from '../logic/calculate';
 
 function App() {
   return (
