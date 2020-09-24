@@ -3,15 +3,15 @@ import Operate from './operate';
 const Calculate = (calculator, buttonName) => {
   const { total, next, operation } = calculator;
 
+  if (buttonName === 'AC') {
+    return { total: null, next: null, operation: null };
+  }
+
   if (String(buttonName).match(/[0-9]/)) {
     if (operation) {
       return { total, next: next ? next + buttonName : buttonName, operation };
     }
     return { total: total ? total + buttonName : buttonName, next, operation };
-  }
-
-  if (buttonName === 'AC') {
-    return { total: null, next: null, operation: null };
   }
 
   if (buttonName === '+/-') {
