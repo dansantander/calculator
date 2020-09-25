@@ -1,12 +1,12 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Button from './Button';
-import PropTypes from 'prop-types';
 
 function ButtonPanel(props) {
   const handleClick = buttonName => {
     props.clickHandler(buttonName);
-  }
-   
+  };
+
   return (
     <div className="buttonPanel">
       <div className="buttonGroup">

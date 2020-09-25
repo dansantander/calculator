@@ -10,7 +10,6 @@ const Calculate = (calculator, buttonName) => {
   if (String(buttonName).match(/[0-9]/)) {
     if (operation) {
       return { total, next: next ? next + buttonName : buttonName, operation };
-      
     }
     return { total: total ? total + buttonName : buttonName, next, operation };
   }

@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ name, color, wide, clickHandler }) {
-
+function Button({
+  name, color, wide, clickHandler,
+}) {
   const handleClick = buttonName => {
     clickHandler(buttonName);
-  }
-   
+  };
+
   const style = {
     backgroundColor: color,
     width: wide ? '50%' : '25%',
@@ -20,7 +21,8 @@ function Button({ name, color, wide, clickHandler }) {
 Button.propTypes = {
   name: PropTypes.string,
   color: PropTypes.string,
-  wide: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]), // Un objeto que puede ser de diferentes tipos
+  // Un objeto que puede ser de diferentes tipos
+  wide: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   clickHandler: PropTypes.func.isRequired,
 };
 
