@@ -12,7 +12,7 @@ const Operate = (numberOne, numberTwo, operation) => {
     case 'X':
       return (n1.times(n2)).toString();
     case '÷':
-      if (n2.toString() === 0) {
+      if (n2.toString() === '0') {
         return 'Undefined';
       }
       return (n1.div(n2)).toString();

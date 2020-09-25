@@ -10,6 +10,7 @@ const Calculate = (calculator, buttonName) => {
   if (String(buttonName).match(/[0-9]/)) {
     if (operation) {
       return { total, next: next ? next + buttonName : buttonName, operation };
+      
     }
     return { total: total ? total + buttonName : buttonName, next, operation };
   }
@@ -32,14 +33,6 @@ const Calculate = (calculator, buttonName) => {
   }
 
   if (buttonName === '=') {
-    console.log(
-      {
-      total: next ? Operate(total, next, operation) : total,
-      next: null,
-      operation: null,
-      }
-    )
-
     return {
       total: next ? Operate(total, next, operation) : total,
       next: null,
@@ -48,7 +41,6 @@ const Calculate = (calculator, buttonName) => {
   }
 
   if (operation) {
-    console.log( { total, next, operation })
     if (operation === '÷' && next === '0') {
       return {
         total: 'No division by 0',
