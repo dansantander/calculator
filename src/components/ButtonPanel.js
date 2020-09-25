@@ -34,9 +34,9 @@ function ButtonPanel(props) {
         <Button name="+" clickHandler={handleClick} />
       </div>
       <div className="buttonGroup">
-        <Button name="0" color="#e0e0e0" wide />
-        <Button name="." color="#e0e0e0" />
-        <Button name="=" />
+        <Button name="0" color="#e0e0e0" wide="true" clickHandler={handleClick} />
+        <Button name="." color="#e0e0e0" clickHandler={handleClick} />
+        <Button name="=" clickHandler={handleClick} />
       </div>
     </div>
   );
