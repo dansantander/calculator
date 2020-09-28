@@ -16,10 +16,7 @@ A basic calculator built with React.
 
 ## Demo
 
-https://react-calculator2504.herokuapp.com/
-
-## Features
-
+[React Calculator](https://react-calculator2504.herokuapp.com/)
 
 ## Installation
 
@@ -27,6 +24,8 @@ You can get a local copy of the repository please run the following commands on 
 ```
 $ cd <folder>
 $ git clone git@github.com:dansantander/calculator.git
+$ npm install
+$ npm start
 ```
 
 ## Built With
@@ -34,6 +33,7 @@ $ git clone git@github.com:dansantander/calculator.git
 - JavaScript
 - HTML
 - CSS
+- Heroku
 
 ## Contributing
 

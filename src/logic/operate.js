@@ -6,23 +6,20 @@ const Operate = (numberOne, numberTwo, operation) => {
 
   switch (operation) {
     case '+':
-      return (n1.plus(n2));
+      return (n1.plus(n2)).toString();
     case '-':
-      return (n1.minus(n2));
-    case 'x':
-      return (n1.times(n2));
+      return (n1.minus(n2)).toString();
+    case 'X':
+      return (n1.times(n2)).toString();
     case '÷':
-      if (n2 === 0) {
+      if (n2.toString() === '0') {
         return 'Undefined';
       }
-      return (n1.div(n2));
+      return (n1.div(n2)).toString();
     case '%':
-      if (n2 === '0') {
-        return 'Undefined';
-      }
-      return (n1.div(n2) / 100);
+      return n2 === 0 ? 'Undefined' : n1.times(n2).div(100).toString();
     case '+/-':
-      return n1.times(-1);
+      return n1.times(-1).toString();
     default:
       return 'Undefined';
   }

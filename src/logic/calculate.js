@@ -15,7 +15,7 @@ const Calculate = (calculator, buttonName) => {
   }
 
   if (buttonName === '+/-') {
-    return { total: total ? Operate(total, '-1', 'x') : null, next: next ? Operate(next, '-1', 'x') : null, operation };
+    return { total: total ? Operate(total, '-1', 'X') : null, next: next ? Operate(next, '-1', 'X') : null, operation };
   }
 
   if (buttonName === '.') {
@@ -40,6 +40,14 @@ const Calculate = (calculator, buttonName) => {
   }
 
   if (operation) {
+    if (operation === '÷' && next === '0') {
+      return {
+        total: 'No division by 0',
+        next: null,
+        operation: null,
+      };
+    }
+
     return {
       total: Operate(total, next, operation),
       next: null,
@@ -47,7 +55,7 @@ const Calculate = (calculator, buttonName) => {
     };
   }
 
-  return { total, next, operation };
+  return { total, next, operation: buttonName };
 };
 
 export default Calculate;
